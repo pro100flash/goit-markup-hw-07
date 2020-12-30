@@ -1,0 +1,58 @@
+    /*СЕКЦИЯ 2*/
+.section-two {
+        padding-top: 94px;
+}
+.fix-txt {
+        display: flex;
+        justify-content: space-between;
+}
+    
+.fix-txt li {
+        width: 270px;
+}
+
+.fix-txt li:not(:last-child) {
+        margin-right: 30px;
+}
+
+.fix-txt h3 {
+        color: $primary-text-color;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        padding-top: 30px;
+        padding-bottom: 10px;
+}
+.fix-txt p {
+        color: $secondary-text-color;
+        font-size: 14px;
+        line-height: 1.7;
+        letter-spacing: 0.03em;
+}
+.list-item::before {
+        display: block;
+        content: "";
+        height: 120px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color:#F5F4FA;
+}
+    .icon-antena::before {
+        background-image: url(../images/icons/antenna.svg);
+        background-size: 72px
+}
+.icon-clock::before {
+        background-image: url(../images/icons/clock.svg);
+        background-size: 72px
+}
+.icon-diagram::before {
+        background-image: url(../images/icons/diagram.svg);
+        background-size: 72px
+}
+.icon-astronaut::before {
+        background-image: url(../images/icons/astronaut.svg);
+        background-size: 72px
+}

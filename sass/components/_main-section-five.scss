@@ -1,0 +1,43 @@
+/*СЕКЦИЯ 5*/
+.section-five {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+.clients-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.clients-container h2 {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 50px;
+    color: $primary-text-color;
+}
+.clients-ul {
+    display: flex;
+}
+.clients-ul li:not(:last-child) {
+    margin-right: 30px;
+}
+
+.clients-icon {
+    display: flex;
+    width: 170px;
+    height: 90px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    color: #AFB1B8;
+}
+.clients-icon:hover,
+.clients-icon:focus{
+    color: $accent-button-color;
+    border: 1px solid $accent-button-color;
+    transition: $timing-cubic;
+}
+.icon {
+    fill: currentColor;
+}

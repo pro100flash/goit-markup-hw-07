@@ -1,0 +1,78 @@
+/*Портфолио*/
+.portfolio {
+    padding-bottom: 94px;
+    padding-top: 94px;
+}
+.div-portfolio {
+    display: flex;
+    flex-wrap: wrap;
+}
+.portfolio-ul {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.portfolio-ul li {
+    margin-right: 30px;
+    margin-bottom: 30px;
+    width: 370px;
+}
+.portfolio-ul li:nth-child(3n) {
+    margin-right: 0px;
+}
+.portfolio-ul li:nth-last-child(-n + 3) {
+    margin-bottom: 0px;
+}
+.portfolio-ul h2 {
+    color: $primary-text-color;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 36px;
+    letter-spacing: 0.06em;
+}
+.portfolio-about p {
+    color: $secondary-text-color;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.03em;
+}
+.portfolio-about {
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.portfolio-about {
+    border-bottom: 1px solid #EEEEEE;
+    border-left: 1px solid #EEEEEE;
+    border-right: 1px solid #EEEEEE;
+    box-sizing: border-box;
+}
+.portfolio-ul li:hover, :focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+.overlay {
+    position: relative;
+    overflow: hidden;
+}
+.card-overlay {
+    position: absolute;
+    transform: translateY(100%);
+    transition: $timing-cubic;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    padding: 63px 24px;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0.03em;
+    color: $full-white;
+    background-color: rgba(33, 150, 243, 0.9);
+}
+.portfolio-ul a:hover .card-overlay,
+.portfolio-ul a:focus .card-overlay {
+    opacity: 1;
+    transform: translateY(0);
+}
